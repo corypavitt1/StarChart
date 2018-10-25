@@ -31,10 +31,10 @@ def add_a_star(name)
     blue
 
     `afplay music/Marimba-alert.mp3`
-    system "sl"
     puts "great job!"
 
     `say -v Susan "Congratulations you now  have a blue star!"`
+    system "sl"
     `afplay music/Star_Wars.mp3`
   elsif
     color == "2"
@@ -44,19 +44,21 @@ def add_a_star(name)
 
     `afplay music/Marimba-alert.mp3`
     puts "great job!"
-    system "sl"
 
     `say -v Susan "Good job! You now  have a red star!"`
+    system "sl"
+    `afplay music/ImagineDragons-Thunder.mp3`
   elsif
     color == "3"
     gold = Star.create(color:"Gold")
     gold.chores << $chore
     gold
     puts "great job!"
-    system "sl"
 
     `afplay music/Marimba-alert.mp3`
     `say -v Susan "Good job! You now  have a gold star!"`
+    system "sl"
+    `afplay music/Ghostbusters_theme_song_HD.mp3`
   elsif
     color == "4"
     green = Star.create(color:"Green")
@@ -65,9 +67,10 @@ def add_a_star(name)
 
     `afplay music/Marimba-alert.mp3`
     puts "great job!"
-    system "sl"
 
     `say -v Susan "Good job! You now  have a green star!"`
+    system "sl"
+    `afplay music/HappyHolidaysJingleBells.mp3`
 
   end
   if kid_id.count_stars >= 10
