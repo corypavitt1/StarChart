@@ -15,6 +15,7 @@ puts "---------------------------------------------------"
 #2
 puts "Can I have your name please?"
 `say -v Susan "Can I have your name please?"`
+
 $kid_name = gets.chomp
 
 def add_a_star(name)
@@ -30,6 +31,7 @@ def add_a_star(name)
     blue
 
     `afplay music/Marimba-alert.mp3`
+    system "sl"
     puts "great job!"
 
     `say -v Susan "Congratulations you now  have a blue star!"`
@@ -42,6 +44,7 @@ def add_a_star(name)
 
     `afplay music/Marimba-alert.mp3`
     puts "great job!"
+    system "sl"
 
     `say -v Susan "Good job! You now  have a red star!"`
   elsif
@@ -50,6 +53,7 @@ def add_a_star(name)
     gold.chores << $chore
     gold
     puts "great job!"
+    system "sl"
 
     `afplay music/Marimba-alert.mp3`
     `say -v Susan "Good job! You now  have a gold star!"`
@@ -61,6 +65,7 @@ def add_a_star(name)
 
     `afplay music/Marimba-alert.mp3`
     puts "great job!"
+    system "sl"
 
     `say -v Susan "Good job! You now  have a green star!"`
 
