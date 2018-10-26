@@ -11,7 +11,9 @@ has_many :stars, through: :chores
     end
 
     def what_you_did
+      puts `clear`
       puts "You must have been very good!"
+      puts `clear`
       `say -v Susan "You must have been very good."`
       `say -v Susan "So...Tell me what chore you did."`
       puts "What chore did you do to get a star?"

@@ -7,3 +7,6 @@ gem "sqlite3"
 gem "pry"
 gem "require_all"
 gem  "cowsay"
+gem 'tty-prompt'
+gem 'tty-spinner'
+gem 'colorize'
